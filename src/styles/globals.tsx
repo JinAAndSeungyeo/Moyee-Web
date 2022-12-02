@@ -1,6 +1,7 @@
 import emotionReset from 'emotion-reset';
 import { css } from '@emotion/react';
 import { theme } from 'styles/theme';
+import { fonts } from 'styles/fonts';
 
 const GlobalStyle = css`
   ${emotionReset};
@@ -10,6 +11,8 @@ const GlobalStyle = css`
   }
   * {
     box-sizing: border-box;
+    font-family: ${fonts.pretendard.REGULAR};
+    color: ${theme.colors.text001};
   }
   body {
     margin: 0;
@@ -32,19 +35,6 @@ const GlobalStyle = css`
   ul,
   li {
     list-style: none;
-  }
-  p,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  span {
-    color: ${theme.colors.text001};
-  }
-  p {
-    font-size: 14px;
   }
   #__next {
     height: 100vh;
