@@ -8,6 +8,8 @@ type FlexStyleProps = {
   alignContent?: string;
   justifyContent?: string;
   alignItems?: string;
+  padding?: string;
+  margin?: string;
 };
 
 type FlexProps = FlexStyleProps & {
@@ -21,6 +23,8 @@ const Flex = ({
   alignContent,
   justifyContent = 'center',
   alignItems = 'center',
+  padding,
+  margin,
   children,
 }: FlexProps): JSX.Element => {
   return (
@@ -31,6 +35,8 @@ const Flex = ({
       alignContent={alignContent}
       justifyContent={justifyContent}
       alignItems={alignItems}
+      padding={padding}
+      margin={margin}
     >
       {children}
     </FlexContainer>
@@ -45,6 +51,8 @@ const FlexContainer = styled.div<FlexStyleProps>`
   align-content: ${({ alignContent }) => alignContent};
   justify-content: ${({ justifyContent }) => justifyContent};
   align-items: ${({ alignItems }) => alignItems};
+  padding: ${({ padding }) => padding};
+  margin: ${({ margin }) => margin};
 `
 
 export default memo(Flex);
