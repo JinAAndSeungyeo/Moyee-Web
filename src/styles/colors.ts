@@ -1,0 +1,42 @@
+export const colors = {
+  white: '#ffffff',
+  black: '#000000',
+
+  red100: '#ffe2da',
+  red200: '#ffbfb6',
+  red300: '#ff9591',
+  red400: '#ff767e',
+  red500: '#ff4965',
+  red600: '#db355e',
+  red700: '#b72456',
+  red800: '#93174d',
+  red900: '#7a0e47',
+
+  primary100: '#d5fedd',
+  primary200: '#acfdc3',
+  primary300: '#83fbb0',
+  primary400: '#63f8aa',
+  main: '#31f4a2',
+  primary600: '#23d19a',
+  primary700: '#18af8e',
+  primary800: '#0f8d7e',
+  primary900: '#097572',
+
+  text100: '#f5fffb',
+  text001: '#d9e5e1',
+  text002: '#b1c6bd',
+  text003: '#94a69f',
+  text004: '#707e79',
+
+  border100: '#383838',
+  border200: '#363636',
+  border300: '#333333',
+  border400: '#2e2e2e',
+  border500: '#2c2c2c',
+
+  background100: '#272727',
+  background200: '#252525',
+  background300: '#232323',
+  background400: '#1e1e1e',
+  background500: '#0e0e0e',
+};
