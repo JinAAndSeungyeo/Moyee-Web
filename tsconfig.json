@@ -17,6 +17,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
+    "jsxImportSource": "@emotion/react",
     "incremental": true,
     "typeRoots": [
       "@types",
@@ -51,5 +52,5 @@
   ],
   "exclude": [
     "node_modules"
-  ]
+  ],
 }
